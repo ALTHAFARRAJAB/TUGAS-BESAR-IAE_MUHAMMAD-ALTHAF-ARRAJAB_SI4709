@@ -1,0 +1,19 @@
+# Use Nginx to serve static files
+FROM nginx:alpine
+
+# Copy static files to nginx html directory
+COPY index.html /usr/share/nginx/html/
+COPY styles.css /usr/share/nginx/html/
+COPY app.js /usr/share/nginx/html/
+COPY components /usr/share/nginx/html/components
+COPY modules /usr/share/nginx/html/modules
+COPY utils /usr/share/nginx/html/utils
+COPY data /usr/share/nginx/html/data
+
+# Copy nginx configuration
+COPY frontend/nginx.conf /etc/nginx/conf.d/default.conf
+
+# Expose port 80
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]

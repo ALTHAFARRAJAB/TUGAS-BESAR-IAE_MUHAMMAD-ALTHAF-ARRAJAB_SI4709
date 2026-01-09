@@ -1,0 +1,13 @@
+{
+  "name": "sicepat-travel-booking",
+  "version": "1.0.0",
+  "description": "SICEPAT - Sistem Cerdas Paling Tepat untuk booking travel",
+  "type": "module",
+  "scripts": {
+    "dev": "npx -y http-server -p 3000 -o",
+    "start": "npx -y http-server -p 3000"
+  },
+  "keywords": ["travel", "booking", "sicepat"],
+  "author": "SICEPAT",
+  "license": "MIT"
+}
