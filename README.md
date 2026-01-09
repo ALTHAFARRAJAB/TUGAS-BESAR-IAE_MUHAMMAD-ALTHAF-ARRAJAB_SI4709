@@ -42,43 +42,10 @@ Website travel booking modern dengan arsitektur microservices, fitur lengkap unt
 - **Docker Compose** - Multi-container orchestration
 - **Nginx** - Web server untuk frontend
 
-## 📋 Prerequisites
-
-Sebelum menjalankan aplikasi, pastikan sudah terinstall:
-
-1. **Docker Desktop** (versi terbaru)
-   - Download: https://www.docker.com/products/docker-desktop
-   - Pastikan Docker Desktop sudah running
-
-2. **Git** (optional, untuk clone repository)
-   - Download: https://git-scm.com/downloads
-
 **Cek instalasi:**
 ```powershell
 docker --version
 docker-compose --version
-```
-
-## 🚀 Cara Menjalankan Aplikasi
-
-### Langkah 1: Clone atau Download Project
-
-```powershell
-# Clone dengan Git
-git clone <repository-url>
-cd EAI_ALTHAF
-
-# Atau extract file ZIP ke folder EAI_ALTHAF
-```
-
-### Langkah 2: Start Aplikasi dengan Docker
-
-```powershell
-# Pastikan berada di folder root project (EAI_ALTHAF)
-cd C:\Users\jayda\Downloads\EAI_ALTHAF
-
-# Start semua services (Database + Backend + Frontend)
-docker-compose up --build
 ```
 
 **Apa yang terjadi:**
@@ -100,7 +67,7 @@ docker-compose up --build
 ✅ Notifications Service connected to MongoDB
 ```
 
-### Langkah 3: Buka Aplikasi di Browser
+### Langkah 1: Buka Aplikasi di Browser
 
 Setelah semua services running, buka:
 
@@ -108,7 +75,7 @@ Setelah semua services running, buka:
 
 **API Gateway:** http://localhost:8080
 
-### Langkah 4: Login ke Aplikasi
+### Langkah 2: Login ke Aplikasi
 
 Gunakan kredensial demo:
 - **Email:** `admin@sicepat.com`
